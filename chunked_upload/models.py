@@ -23,6 +23,8 @@ def generate_upload_id():
 #     return time.strftime(filename)
 
 from hisra_server.settings import MEDIA_ROOT
+
+
 class BaseChunkedUpload(models.Model):
     """
     Base chunked upload model. This model is abstract (doesn't create a table
