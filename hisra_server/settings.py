@@ -164,3 +164,10 @@ CHUNKED_UPLOAD_PATH = generate_filename
 # STORAGE = FileSystemStorage(location=MEDIA_ROOT)
 
 CHUNKED_UPLOAD_ABSTRACT_MODEL = False
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
+
